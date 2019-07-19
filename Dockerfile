@@ -9,5 +9,5 @@ LABEL maintainer="Alberto Gimeno <gimenete@gmail.com>"
 
 COPY lib /action/lib
 RUN rm -rf node_modules
-RUN npm install eslint babel-eslint --verbose
+RUN npm install -g eslint babel-eslint
 ENTRYPOINT ["/action/lib/entrypoint.sh"]
