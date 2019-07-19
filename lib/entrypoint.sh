@@ -2,6 +2,6 @@
 
 set -e
 
-npm install eslint babel-eslint
+npm install -D eslint babel-eslint
 
 NODE_PATH=node_modules node /action/lib/run.js
