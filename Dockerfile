@@ -8,5 +8,6 @@ LABEL com.github.actions.color="yellow"
 LABEL maintainer="Alberto Gimeno <gimenete@gmail.com>"
 
 COPY lib /action/lib
+RUN cat /github/home/.npm/_logs/*.log
 RUN rm -rf node_modules
 ENTRYPOINT ["/action/lib/entrypoint.sh"]
