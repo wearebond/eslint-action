@@ -8,5 +8,5 @@ LABEL com.github.actions.color="yellow"
 LABEL maintainer="Alberto Gimeno <gimenete@gmail.com>"
 
 COPY lib /action/lib
-RUN `npm i --no-package-lock --no-save eslint babel-eslint`
+RUN npm i --no-package-lock --no-save eslint babel-eslint
 ENTRYPOINT ["/action/lib/entrypoint.sh"]
