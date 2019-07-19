@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:12-slim
 
 LABEL com.github.actions.name="ESLint checks"
 LABEL com.github.actions.description="Lint your code with eslint in parallel to your builds"
